@@ -1,29 +1,21 @@
 #include <stdio.h>
 
+int main() {
+  int v1[3], v2[3], result[3];
 
+  printf("Entrer les composantes du vecteur v1(x y z) :\n ");
+ printf("V1= ");
+  scanf("%d %d %d", &v1[0], &v1[1], &v1[2]);
 
-int main () {
-    float V1[3];
-    float V2[3];
+  printf("Entrer les composantes du vecteur v2(x y z):\n ");
+  printf("V2 = ");
+  scanf("%d %d %d", &v2[0], &v2[1], &v2[2]);
 
-    printf("☢️ \tLe produit vectoriel ne se fait qu'en dimension 3!\n ");
+  resultat[0] = v1[1] * v2[2] - v1[2] * v2[1];
+  resultat[1] = v1[2] * v2[0] - v1[0] * v2[2];
+  resultat[2] = v1[0] * v2[1] - v1[1] * v2[0];
 
-    printf("\nEntrer les coordonnées du premier vecteur:\n");
-    for (int i = 0; i < 3; i++)
-    {
-        scanf("%f", &V1[i]);
-    }
+  printf("Résultat du produit vectoriel : (%d, %d, %d)\n", resultat[0], resultat[1], resultat[2]);
 
-    printf("\nEntrer les coordonnées du deuxième vecteur:\n");
-    for (int i = 0; i < 3; i++)
-    {
-        scanf("%f", &V2[i]);
-    }
-    
-    printf("\nLe produit vectoriel est :\n");
-    printf("\t %.2f\n", (V1[1]*V2[2])-(V1[2]*V2[1]));
-    printf("\t %.2f\n", (V1[2]*V2[0])-(V1[0]*V2[2]));
-    printf("\t %.2f\n", (V1[0]*V2[1])-(V1[1]*V2[0]));
-    
-    return 0;
+  return 0;
 }
