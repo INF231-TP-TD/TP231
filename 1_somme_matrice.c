@@ -10,29 +10,29 @@ int main () {
     int M1[MAX_DIM][MAX_DIM];
     int M2[MAX_DIM][MAX_DIM];
 
-    printf("Entrer les dimentions des matrices (respectivement Lignes puis colones), entiers positifs :\n");
+    printf("Entrer les dimentions des matrices (Lignes puis colones), entiers positifs :\n");
     do
     {
         scanf("%d %d",&n, &m);
     } while (n<=0 && m<=0 && n>MAX_DIM && m>MAX_DIM);
 
-    printf("\nRemplissage de la première matrice (les entiers).\n");
+    printf("\nRemplissage de la première matrice .\n");
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
         {
-            printf("Matrice 1[%d][%d]:\n", i+1, j+1);
+            printf("Mat 1[%d][%d]:\n", i+1, j+1);
             scanf("%d", &M1[i][j]);
         }
         
     }
     
-    printf("\nRemplissage de la deuxième matrice (les entiers).\n");
+    printf("\nRemplissage de la deuxième matrice .\n");
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
         {
-            printf("Matrice 2[%d][%d]:\n", i+1, j+1);
+            printf("Mat2[%d][%d]:\n", i+1, j+1);
             scanf("%d", &M2[i][j]);
         }
         
